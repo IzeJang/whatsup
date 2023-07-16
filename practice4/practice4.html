@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice4</title>
+<style>
+
+
+.home{
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    width:80%;
+
+}
+
+h1{
+    display:flex;
+    padding:15px;
+}
+
+.box{
+    display:flex;
+    padding-left:15px;
+    padding-top:15px;
+    padding-right:15px;
+    font-weight:bolder;
+    margin-bottom:10px;
+}
+
+
+.date{
+    display:flex;
+    flex-direction: row;
+    padding:15px;   
+    height: 40px
+}
+
+input{
+    display:flex;
+    width:80%;
+}
+
+.title{
+    display:flex;
+    flex-direction: column;
+    padding-left:15px;   
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.content{
+    display:flex;
+    flex-direction: row;
+    margin:4px;
+}
+
+input[type=text] {
+    margin-left: 15px;
+}
+
+input[type=radio] {
+    width:5%;
+    height:75%;
+}
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: gray 1px solid;
+}
+
+button1{
+    border:gray 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+button2{
+    border:gray 1px solid;
+    padding: 10px;
+    margin: 10px;
+    color:white;
+    background-color: rgb(38, 137, 231);
+}
+
+</style>
+
+
+</head>
+<body>
+<div class="home">
+    <h1>목표 사이클 추가</h1>
+    <div class="box">사이클 이름</div>
+        <div class="form">
+            <input type="text" placeholder="2023년 3분기 전사목표">
+        </div>
+    <div class="box">사이클 기간</div>
+        <div class="date">
+            <start>
+                시작일
+                <input type="date"></input>
+            </start>
+            <end>
+            종료일
+            <input type="date"></input>
+            </end>
+        </div>
+    <div class="title">사이클 공개</div>
+        <div class="content"><input type="radio" name="visibility" id="private" value="private" > 
+            <label for="private">비공개 - 어드민만 볼 수 있습니다.</label>
+        </div>
+        <div class="content"><input type="radio" name="visibility" id="partially" value="partially">
+            <label for="partially"> 일부 공개 - 선택한 조직의 구성원만 볼 수 있습니다.</label>
+        </div>
+        <div class="content"><input type="radio" name="visibility" id="public" value="public">
+            <label for="public">전체 공개 - 모든 구성원이 볼 수 있습니다.</label>
+        </div>
+    <div class="title">목표 합의 여부</div>
+        <div class="content"><input type="radio" name="agree" id="before" value="before">
+            <label for="before">리더와 합의하지 않고 목표 수립 가능</label>
+        </div>
+        <div class="content"><input type="radio" name="agree" id="after" value="after">
+            <label for="after">목표를 세운 후 리더와 합의 필요</label>
+        </div>
+
+<div class="footer">
+    <button1>취소</button1>
+    <button2>생성</button2>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice3</title>
+<style>
+
+
+.home{
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    width:80%;
+
+}
+
+h1{
+    display:flex;
+    padding:15px;
+}
+
+.box{
+    display:flex;
+    padding:15px;
+    font-weight:bolder;
+}
+
+.dropdown{
+    display:flex;
+    padding:15px;
+    height: 40px;;
+}
+
+select{
+    width:100%;
+}
+
+.date{
+    display:flex;
+    flex-direction: row;
+    padding:15px;   
+    height: 40px
+}
+
+input{
+    width:80%;
+}
+
+.time{
+    display:flex;
+    font-weight: bolder;
+    color:rgb(33, 81, 224);
+    justify-content: center;
+    align-items: center;
+    width:20%;
+}
+
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: gray 1px solid;
+}
+
+button1{
+    border:gray 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+button2{
+    border:gray 1px solid;
+    padding: 10px;
+    margin: 10px;
+    color:white;
+    background-color: rgb(38, 137, 231);
+}
+
+</style>
+
+
+</head>
+<body>
+<img src="sample.png">
+<div class="home">
+    <h1>미팅 일정 생성</h1>
+    <div class="box">Google Calendar 연동 중</div>
+    <div class="box">상대</div>
+        <div class="dropdown">
+            <select name="nickname">
+                <option placeholder>이름 검색</option>
+                <option value="Ron">Ron</option>
+                <option value="Whatsup">Whatsup</option>
+                <option value="Alexa">Alexa</option>
+                <option value="Ize">Ize</option>
+            </select>
+        </div>
+    <div class="box">날짜 및 시간</div>
+        <div class="date">
+            <input type="date">
+            <div class="time">시간선택</div>        
+        </div>
+    
+<div class="footer">
+    <button1>취소</button1>
+    <button2>생성</button2>
+</div>
+
+</div>
+</body>
+</html>

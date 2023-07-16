@@ -1,0 +1,120 @@
+.lemonbase {
+    display:flex;
+    flex-direction:row;
+}
+
+.lefttab {
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    height:100%;
+}
+
+.sidebar1{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    border-bottom: gray 1px solid ;
+    justify-content: space-around;
+    padding:30px;
+}
+
+img{
+    display:flex;
+    width:50%;
+    height:50%;
+    justify-content: center;
+    padding:30px;
+
+}
+/* 
+flex directioin이 row일 때 가로 정렬은 justify-content, 세로 정렬은 align-item
+flex directioin이 column일 때 가로 정렬은 align-item, 세로 정렬은 justify-content
+ */
+
+ptname{
+    display:flex;
+    font-size:large;
+    font-weight: bold;
+    justify-content: center;
+    padding:30px;
+
+}
+
+ptrole{
+    display:flex;
+    justify-content: center;
+}
+
+ptgroup{
+    display:flex;
+    justify-content: center;
+}
+
+.sidebar2 {
+    display:flex;
+    height:100%;
+    font-weight: bold;
+    padding:10px;
+
+}
+
+.sidebar3 {
+    display:flex;
+    height:100%;
+    font-weight: bold;
+    padding:10px;
+}
+
+.righttab {
+    display:flex;
+    flex-direction: column;
+    width:70%;
+    border-left:gray 1px solid;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    padding:30px;
+    justify-content: space-between;
+
+}
+
+profile{
+    font-weight:900;
+}
+
+.section{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    padding:30px;
+
+}
+
+.sort{
+    display:flex;
+    flex-direction: column;
+    width:20%;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+}
+
+.box{
+    padding:10px;
+    color:gray;
+    font-weight: bold;
+ 
+}
+
+
+.main{
+    padding:10px;
+    font-weight: bold;
+
+}
